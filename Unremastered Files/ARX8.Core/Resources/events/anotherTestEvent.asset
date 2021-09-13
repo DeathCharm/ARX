@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 731c33e1e5b5fd54eb40d7dc6b5e4bdb, type: 3}
+  m_Name: anotherTestEvent
+  m_EditorClassIdentifier: 
+  mo_eventOrderList: {fileID: 0}
+  me_lastLoadStatusInPlayer: 0
+  mstr_eventRegion: Misc. Event
+  mstr_gameEventFile: "public static class GameEvents\n{\n\n#region ARX Game Events\npublic
+    static ARX_Event anotherTestEvent;\npublic static ARX_Event soManyTestEvents;\npublic
+    static ARX_Event testEvent;\n#endregion\n\npublic static void InstantiateEvent(out
+    ARX_Event oEvent, string strID)\r\n        {\r\n                oEvent = FEN.Loading.LoadEvent(strID);\r\n\r\n               
+    if (oEvent == null)\r\n                {\r\n                    oEvent = ScriptableObject.CreateInstance<ARX_Event>();\r\n               
+    }\r\n                oEvent.SetLoadStatus();\r\n            }\r\n           
+    \n\npublic static void Initialize(){\n#region Misc. Event\nInstantiateEvent(out
+    anotherTestEvent, nameof(anotherTestEvent));\nInstantiateEvent(out soManyTestEvents,
+    nameof(soManyTestEvents));\nInstantiateEvent(out testEvent, nameof(testEvent));\n#endregion
+    Misc. Event\n\n}\n}"

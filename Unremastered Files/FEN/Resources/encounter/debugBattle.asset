@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30350806c93b88c46bcf20dce7d75679, type: 3}
+  m_Name: debugBattle
+  m_EditorClassIdentifier: 
+  mstr_notes: 
+  mo_preBattleFlowchart: {fileID: 0}
+  mo_postBattleFlowchart: {fileID: 0}
+  moa_enemyLayout: []
+  mstr_fileOuput: 'namespace FEN{
+
+
+    using ARX;
+
+    using FEN;
+
+    using UnityEngine;
+
+    //Auto-Generated
+    by FEN_CustomEditor_Encounter.cs
+
+
+    public static partial class CombatEncounters{
+
+    public
+    static class EncounterList{
+
+    public static FEN_Encounter DebugBattle{
+
+    get
+
+    {
+
+    return
+    FEN.Loading.LoadEncounter("debugBattle");
+
+    }
+
+    }
+
+
+    }
+
+    }
+
+    }'
